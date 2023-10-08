@@ -8,19 +8,19 @@ const Navbar = () => {
 
         <li className="bg-white p-2 hover:bg-rose-100 rounded-lg mr-4"><NavLink to='/'
             className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? "text-rose-800 font-bold underline italic" : ""
+                isPending ? "pending" : isActive ? "text-[#241468] font-bold italic" : ""
             }
         >Home</NavLink></li>
 
         <li className="bg-white hover:bg-rose-100 p-2 rounded-lg mr-4"><NavLink to='/about'
             className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? "text-rose-800 font-bold underline italic" : ""
+                isPending ? "pending" : isActive ? "text-[#241468] font-bold italic" : ""
             }
         >About us</NavLink></li>
 
         <li className="bg-white hover:bg-rose-100 p-2 rounded-lg mr-4"><NavLink to='/gallery'
             className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? "text-rose-800 font-bold underline italic" : ""
+                isPending ? "pending" : isActive ? "text-[#241468] font-bold italic" : ""
             }
         >Gallery</NavLink></li>
 
@@ -28,14 +28,14 @@ const Navbar = () => {
 
         <li className="bg-white hover:bg-rose-100 p-2 rounded-lg mr-4"><NavLink to='/register'
             className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? "text-rose-800 font-bold underline italic" : ""
+                isPending ? "pending" : isActive ? "text-[#241468] font-bold italic" : ""
             }
         >Register</NavLink></li>
 
     </>
 
     return (
-        <div className="navbar p-5 bg-rose-400">
+        <div className="navbar p-5 bg-[#241468]">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">

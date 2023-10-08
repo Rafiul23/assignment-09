@@ -1,7 +1,7 @@
-import  slider1  from '../assets/bday_1.jpg'
-import  slider2  from '../assets/bday_2.jpg'
-import  slider3  from '../assets/bday_3.jpg'
-import  slider4  from '../assets/bday_4.jpg'
+import  slider1  from '../assets/caaakeee.jpg'
+import  slider2  from '../assets/party.jpg'
+import  slider3  from '../assets/child.jpg'
+import  slider4  from '../assets/flowers (1).jpg'
 
 const Banner = () => {
     return (

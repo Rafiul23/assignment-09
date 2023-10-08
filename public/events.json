@@ -1,0 +1,75 @@
+[
+    {
+      "id": 1,
+      "thumbnail": "https://i.ibb.co/RctF6qq/cake-1.jpg",
+      "title": "Cake Provider",
+      "price": 199.99,
+      "description": "Our cake provider offers a delectable array of services that cater to every sweet craving and special occasion. From custom-designed wedding cakes that are a stunning centerpiece for your big day to whimsical and themed birthday cakes that delight both young and old, our talented bakers craft confectionery masterpieces tailored to your unique vision. We also offer a wide range of flavors and dietary options, ensuring that everyone can indulge in our creations, including gluten-free and vegan alternatives. Additionally, our cake provider extends its expertise to include cupcakes, cake pops, and other sweet treats for any event, big or small. With an unwavering commitment to taste and artistry, we are here to make your celebrations even sweeter.",
+      "imgUrls_1": "https://i.ibb.co/VJGdddN/cakee.jpg",
+      "imgUrls_2": "https://i.ibb.co/kHFDhc0/cakk.jpg",
+      "imgUrls_3": "https://i.ibb.co/Ny7QT1j/party.jpg",
+      "imgUrls_4": "https://i.ibb.co/mFW96Lx/Premium-Photo-Delicious-birthday-cake-with-candle-on-light-blue-background-space-for-text.jpg"
+      
+    },
+    {
+      "id": 2,
+      "thumbnail": "https://i.ibb.co/gTNLPLJ/mitchel-willem-jacob-anneveldt-CEZfv-C9-T2y-U-unsplash.jpg",
+      "title": "Venue Organiser",
+      "price": 249.99,
+      "description": "Our venue organizer service is your trusted partner in creating unforgettable events. We specialize in curating unique and versatile spaces to suit any occasion, from intimate gatherings to grand celebrations. Our team of experienced professionals is dedicated to turning your vision into reality, meticulously handling all aspects of event planning, from layout and decor to catering and entertainment. With a keen eye for detail and a commitment to excellence, we ensure that every event we organize exceeds your expectations. Whether it's a wedding, corporate conference, or a social gathering, our venue organizer service is here to provide a seamless and exceptional experience for you and your guests.",
+      "imgUrls_1": "https://i.ibb.co/CtB36Rw/dylan-carr-If-Cdmwrjj1-M-unsplash.jpg",
+      "imgUrls_2": "https://i.ibb.co/2y6Bv7C/sigmund-t-M-6-Kp-Pl-Sw-unsplash.jpg",
+      "imgUrls_3": "https://i.ibb.co/MVfGLzn/zac-wolff-uuw-A21vm-I3o-unsplash.jpg",
+      "imgUrls_4": "https://i.ibb.co/Q8hQMVp/caleb-mcguire-9vy-Ma36-IBw-unsplash.jpg"
+      
+    },
+    {
+      "id": 3,
+      "thumbnail": "https://i.ibb.co/3rGL5mT/jay-wennington-N-Y88-TWm-Gw-A-unsplash.jpg",
+      "title": "Food Provider",
+      "price": 399.99,
+      "description": "Our food provider service is a culinary delight, offering a diverse range of mouthwatering dishes and exceptional catering solutions to elevate your dining experience. Whether you're planning a corporate luncheon, a lavish wedding reception, or a casual family gathering, we bring creativity and flavor to every table. Our team of skilled chefs is dedicated to sourcing the finest ingredients and crafting exquisite menus that cater to various tastes and dietary preferences, including vegetarian, vegan, and gluten-free options. With a commitment to culinary excellence, impeccable presentation, and attentive service, we ensure that every event becomes a delectable memory. Taste the difference with our food provider service, where passion meets palate.",
+      "imgUrls_1": "https://i.ibb.co/hg2wdzg/mohammad-saifullah-NEq-PK-b-F3-HQ-unsplash.jpg",
+      "imgUrls_2": "https://i.ibb.co/ySWTt7m/valentin-b-kremer-Mz-Vxr-OWYm-QQ-unsplash.jpg",
+      "imgUrls_3": "https://i.ibb.co/WW66JDQ/stephanie-wubben-NT0i-TImu-Uk-I-unsplash.jpg",
+      "imgUrls_4": "https://i.ibb.co/xz8kGKN/alex-haney-CAhj-Zm-Vk5-H4-unsplash.jpg"
+      
+    },
+    {
+      "id": 4,
+      "thumbnail": "https://i.ibb.co/m4g4hmq/alexander-dummer-a-S4-Duj2j7r4-unsplash.jpg",
+      "title": "Photography",
+      "price": 499.99,
+      "description": "Our photography service is your trusted partner in capturing life's precious moments with artistry and precision. Whether it's a wedding, a family portrait session, a corporate event, or a milestone celebration, our experienced photographers are dedicated to preserving your memories in stunning visual narratives. With an eye for detail and a passion for storytelling, we craft images that evoke emotions and tell your unique story. From candid moments to meticulously composed shots, we ensure that every frame reflects the essence of the occasion. Our commitment to quality, professionalism, and creativity ensures that your photographs will be cherished for generations to come. Choose our photography service to transform moments into lasting memories.",
+      "imgUrls_1": "https://i.ibb.co/PWvz9Rm/christian-wiediger-g-Vb-OF8md-E3-U-unsplash.jpg",
+      "imgUrls_2": "https://i.ibb.co/vJh9DsG/bailey-mahon-2b6-K4uy0-Hbc-unsplash.jpg",
+      "imgUrls_3": "https://i.ibb.co/HCvDGq0/erik-mclean-2-Wv9-Vnwzee-I-unsplash.jpg",
+      "imgUrls_4": "https://i.ibb.co/rQkv42k/francois-olwage-d-FFj-Ve-Yq-MX8-unsplash.jpg"
+      
+    },
+    {
+      "id": 5,
+      "thumbnail": "https://i.ibb.co/169bv3F/christiann-koepke-d-Qy-S2p-MYtok-unsplash.jpg",
+      "title": "Hosting",
+      "price": 399.99,
+      "description": "Our hosting service is your key to seamless and memorable events. Whether you're planning a corporate conference, a wedding, or a social gathering, our experienced hosts are here to ensure everything runs smoothly. From greeting and managing guests to coordinating activities and keeping the event's timeline on track, our dedicated team brings professionalism and charm to every occasion. With an attentive ear and a warm smile, we provide a welcoming and hospitable atmosphere, making your guests feel comfortable and valued. Our commitment to meticulous planning and flawless execution ensures that your event is a resounding success, leaving you free to enjoy the moment without worry. Choose our hosting service for an unforgettable event experience.",
+      "imgUrls_1": "https://i.ibb.co/TPWwZmx/soundtrap-n30-i7mx62o-unsplash.jpg",
+      "imgUrls_2": "https://i.ibb.co/1dQ7Lx6/marty-o-neill-9ujd-LC6s-Oa-M-unsplash.jpg",
+      "imgUrls_3": "https://i.ibb.co/5rWxqFM/soundtrap-B2f-Nl-HHI7d-I-unsplash.jpg",
+      "imgUrls_4": "https://i.ibb.co/dPzVqMC/convertkit-Cb-LJAUI-js-unsplash.jpg"
+      
+    },
+    {
+      "id": 6,
+      "thumbnail": "https://i.ibb.co/Gv5jGkP/danny-howe-bn-D2b-Cvpik-unsplash.jpg",
+      "title": "DJ Party Organiser",
+      "price": 599.99,
+      "description": "Our DJ party organizer service is your ultimate destination for electrifying and unforgettable events. With a passion for music and a knack for creating an infectious party atmosphere, we specialize in curating epic DJ-driven experiences. Whether it's a pulsating nightclub event, a lively wedding reception, or a themed party, our skilled DJs and event planners work tirelessly to ensure the perfect blend of music, lighting, and energy. From setting the mood with the latest beats to crafting personalized playlists that keep the dance floor alive, we turn your vision into a sonic reality. With a commitment to creating lasting memories, our DJ party organizer service guarantees a night of non-stop fun and excitement for you and your guests. Get ready to dance the night away with us!",
+      "imgUrls_1": "https://i.ibb.co/yns5J01/aleksandr-popov-h-Tv8aa-Pzi-OQ-unsplash.jpg",
+      "imgUrls_2": "https://i.ibb.co/LhvsJWm/aditya-chinchure-Zh-QCZjr9f-Ho-unsplash.jpg",
+      "imgUrls_3": "https://i.ibb.co/9svV4Ck/zac-bromell-y8-PLju-Po-Dl-M-unsplash.jpg",
+      "imgUrls_4": "https://i.ibb.co/hcddKRZ/vishnu-r-nair-m1-WZS5ye404-unsplash.jpg"
+      
+    }
+  ]
+  

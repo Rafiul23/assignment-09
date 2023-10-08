@@ -11,6 +11,7 @@ import About from './Components/About';
 import Login from './Components/Login';
 import Register from './Components/Register';
 import Gallery from './Components/Gallery';
+import EventDetails from './Components/EventDetails';
 
 const router = createBrowserRouter([
   {
@@ -19,7 +20,13 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Home></Home>
+        element: <Home></Home>,
+        loader: ()=> fetch('/events.json') 
+      },
+      {
+        path: "/events/:id",
+        element: <EventDetails></EventDetails>,
+        loader: ()=> fetch('/events.json')
       },
       {
         path: "/about",
