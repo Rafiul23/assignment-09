@@ -2,6 +2,7 @@ import { useLoaderData } from "react-router-dom";
 import Banner from "./Banner";
 import Service from "./Service";
 import Achievement from "./Achievement";
+import Testimonials from "./Testimonials";
 
 
 const Home = () => {
@@ -19,6 +20,7 @@ const Home = () => {
                 }
             </div>
             <Achievement></Achievement>
+            <Testimonials></Testimonials>
         </div>
     );
 };
