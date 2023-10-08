@@ -4,7 +4,7 @@ import client3 from '../assets/client_3.jpg'
 
 const Testimonials = () => {
     return (
-       <div className='my-10'>
+       <div className='my-10 lg:my-20'>
         <h2 className='text-center my-4 font-bold text-3xl text-[#241468]'>Testimonials</h2>
              <div className='grid lg:grid-cols-3 gap-4'>
             <div className='text-center p-3 font-bold text-[#241468] space-y-4'>
