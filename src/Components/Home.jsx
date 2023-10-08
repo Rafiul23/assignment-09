@@ -1,6 +1,7 @@
 import { useLoaderData } from "react-router-dom";
 import Banner from "./Banner";
 import Service from "./Service";
+import Achievement from "./Achievement";
 
 
 const Home = () => {
@@ -17,6 +18,7 @@ const Home = () => {
                     servicesData.map(service => <Service key={service.id} service={service}></Service>)
                 }
             </div>
+            <Achievement></Achievement>
         </div>
     );
 };
