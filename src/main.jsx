@@ -14,6 +14,8 @@ import Gallery from './Components/Gallery';
 import EventDetails from './Components/EventDetails';
 import AuthProvider from './Components/AuthProvider';
 import { ToastContainer } from 'react-toastify';
+import PrivateRoute from './PrivateRoute/PrivateRoute';
+import Contact from './Components/Contact';
 
 const router = createBrowserRouter([
   {
@@ -27,7 +29,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/events/:id",
-        element: <EventDetails></EventDetails>,
+        element: <PrivateRoute><EventDetails></EventDetails></PrivateRoute>,
         loader: ()=> fetch('/events.json')
       },
       {
@@ -44,7 +46,11 @@ const router = createBrowserRouter([
       },
       {
         path: "/gallery",
-        element: <Gallery></Gallery>
+        element: <PrivateRoute><Gallery></Gallery></PrivateRoute>
+      },
+      {
+        path: "/contact",
+        element: <PrivateRoute><Contact></Contact></PrivateRoute>
       }
     ]
   },

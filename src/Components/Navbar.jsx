@@ -42,6 +42,13 @@ const Navbar = () => {
             }
         >Register</NavLink></li>
 
+
+        <li className="bg-white hover:bg-rose-100 p-2 rounded-lg mr-4"><NavLink to='/contact'
+            className={({ isActive, isPending }) =>
+                isPending ? "pending" : isActive ? "text-[#241468] font-bold italic" : ""
+            }
+        >Contact Us</NavLink></li>
+
     </>
 
     return (
@@ -64,7 +71,7 @@ const Navbar = () => {
             </div>
             <div className="navbar-end">
             {
-                user && <img className="rounded-full w-10 mr-3 h-10" src={user?.photoURL} alt="" />
+                user && <img className="rounded-full w-10 mr-3 h-10" src={user?.photoURL} />
             }
 
             {

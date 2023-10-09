@@ -1,5 +1,5 @@
 import { useContext, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "./AuthProvider";
 import { updateProfile } from "firebase/auth";
 import {  toast } from 'react-toastify';
@@ -12,6 +12,7 @@ const Register = () => {
 
     const [success, setSuccess] = useState('');
     const [error, setError] = useState('');
+    const navigate = useNavigate();
 
     const handleRegister = e => {
         e.preventDefault();
@@ -19,6 +20,11 @@ const Register = () => {
         const email = e.target.email.value;
         const password = e.target.password.value;
         const photo = e.target.imgURL.value;
+
+        e.target.name.value = '';
+        e.target.email.value = '';
+        e.target.password.value = '';
+        e.target.imgURL.value = '';
 
 
         if(password.length < 6){
@@ -51,6 +57,7 @@ const Register = () => {
                 toast.error(error.message);
             })
 
+            navigate(location?.state ? location.state : "/")
             
         })
         .catch(error =>{

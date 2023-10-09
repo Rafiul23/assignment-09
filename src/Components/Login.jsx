@@ -17,9 +17,12 @@ const Login = () => {
         const email = e.target.email.value;
         const password = e.target.password.value;
 
+        e.target.email.value = '';
+        e.target.password.value = '';
+
         signIn(email, password)
         .then(result =>{
-            
+            console.log(result.user);
             navigate(location?.state ? location.state : "/")
         })
         .catch(error =>{
