@@ -1,8 +1,12 @@
-# React + Vite
+Name of my website : Twilight (A birthday party event management website)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Live link :
 
-Currently, two official plugins are available:
+5 features of my website:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<li>We have implementd firebase authentication system in our website.</li>
+<li>One can register in our website by email and password.</li>
+<li>One can signin with google in our website.</li>
+<li>After signin with email/password or by google, he/she can find  his/her name and picture on navbar.</li>
+<li>There are some protective routes in our website. That means, no one can visit those links without signing in to our website.</li>
+<li>If someone wants to logout from our website, he/she can logout by clicking the logout button.</li>
