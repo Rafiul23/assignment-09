@@ -5,14 +5,14 @@ import { AuthContext } from "./AuthProvider";
 
 const Register = () => {
 
-    const { signInWithGoogle, setUser, createUser, setError } = useContext(AuthContext)
+    const { signInWithGoogle, setName, setPhoto, setUser, name, photo, createUser, setError } = useContext(AuthContext)
 
     const handleRegister = e => {
         e.preventDefault();
-        const name = e.target.name.value;
+        // const name = e.target.name.value;
         const email = e.target.email.value;
         const password = e.target.password.value;
-        const photo = e.target.photoURL.value;
+        // const photo = e.target.ingURL.value;
 
 
         if(password.length < 6){
@@ -45,7 +45,11 @@ const Register = () => {
         .then(result =>{
             const loggedInUser = result.user;
             setUser(loggedInUser);
+            setName(loggedInUser.displayName);
+
+            setPhoto(loggedInUser.photoURL)
             console.log(loggedInUser);
+            console.log(name, photo);
         })
         .catch(error =>{
             console.log(error.message);
@@ -67,7 +71,7 @@ const Register = () => {
                 <input type="password" name="password" className="border p-4 block my-4 w-3/4" id="password" placeholder="Your Password" required />
 
                 <label htmlFor="photo">Photo</label>
-                <input type="text" name="photoURL" id="photo" className="border p-4 block my-4 w-3/4" placeholder="Your Photo URL" />
+                <input type="text" name="imgURL" id="photo" className="border p-4 block my-4 w-3/4" placeholder="Your Image URL" />
 
                 <button className="btn bg-[#241468] text-white">Register</button>
 

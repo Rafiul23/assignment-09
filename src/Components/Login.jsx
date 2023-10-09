@@ -40,8 +40,7 @@ const Login = () => {
                 underline text-blue-700 font-bold" to='/register'>Register</Link> </p>
             </form>
 
-            {/* <p className="text-xl my-3 text-blue-700">Or</p>
-            <button className="btn btn-primary mt-4">Login with Google</button> */}
+           
         </div>
     );
 };
