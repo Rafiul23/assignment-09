@@ -16,18 +16,18 @@ const Gallery = () => {
         <div className='my-10'>
             <h2 className='text-center lg:text-4xl font-bold text-[#241468]'>Our Successful Events Gallery</h2>
             <div className='my-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3'>
-                <img src={img1} className='w-full lg:h-[300px]' />
-                <img src={img2} className='w-full lg:h-[300px]' />
-                <img src={img3} className='w-full lg:h-[300px]' />
-                <img src={img4} className='w-full lg:h-[300px]' />
-                <img src={img5} className='w-full lg:h-[300px]' />
-                <img src={img6} className='w-full lg:h-[300px]' />
-                <img src={img7} className='w-full lg:h-[300px]' />
-                <img src={img8} className='w-full lg:h-[300px]' />
-                <img src={img9} className='w-full lg:h-[300px]' />
-                <img src={img10} className='w-full lg:h-[300px]' />
-                <img src={img11} className='w-full lg:h-[300px]' />
-                <img src={img12} className='w-full lg:h-[300px]' />
+                <img src={img1} className='w-full h-[300px]' />
+                <img src={img2} className='w-full h-[300px]' />
+                <img src={img3} className='w-full h-[300px]' />
+                <img src={img4} className='w-full h-[300px]' />
+                <img src={img5} className='w-full h-[300px]' />
+                <img src={img6} className='w-full h-[300px]' />
+                <img src={img7} className='w-full h-[300px]' />
+                <img src={img8} className='w-full h-[300px]' />
+                <img src={img9} className='w-full h-[300px]' />
+                <img src={img10} className='w-full h-[300px]' />
+                <img src={img11} className='w-full h-[300px]' />
+                <img src={img12} className='w-full h-[300px]' />
             </div>
         </div>
     );

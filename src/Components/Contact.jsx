@@ -1,4 +1,5 @@
-
+import {  toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Contact = () => {
 
@@ -10,11 +11,11 @@ const Contact = () => {
         e.target.name.value = '';
         e.target.message.value = '';
 
-        console.log(name, message);
+        toast.success('Successfully submitted the message!!!');
     }
 
     return (
-        <div className="w-3/4">
+        <div className="w-3/4 p-4">
             <h2 className="text-3xl font-bold text-[#241468] my-10">Contact with us</h2>
 
             <form onSubmit={handleMessage}>

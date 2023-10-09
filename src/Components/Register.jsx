@@ -4,6 +4,7 @@ import { AuthContext } from "./AuthProvider";
 import { updateProfile } from "firebase/auth";
 import {  toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { FcGoogle } from 'react-icons/fc';
 
 
 const Register = () => {
@@ -82,7 +83,7 @@ const Register = () => {
     }
 
     return (
-        <div className="w-3/4">
+        <div className="w-3/4 p-4">
             <h2 className="text-3xl font-bold my-10 text-[#241468]">Please Register</h2>
 
             <form onSubmit={handleRegister}>
@@ -111,7 +112,7 @@ const Register = () => {
 
             <p className="text-xl my-3 text-blue-700">Or</p>
 
-            <button onClick={handleGoogleSignIn} className="btn mb-3 btn-primary mt-4">Login with Google</button>
+            <button onClick={handleGoogleSignIn} className="btn mb-3  mt-4"><FcGoogle></FcGoogle>Login with Google</button>
 
         </div>
     );

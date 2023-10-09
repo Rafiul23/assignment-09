@@ -4,7 +4,7 @@ const Achievement = () => {
     return (
         <div className="my-10">
             <h2 className="text-[#241468] text-center font-bold text-3xl">Our Achievements</h2>
-            <div className="grid grid-cols-1 lg:h-[300px] mt-5 items-center lg:grid-cols-4 bg-[#241468]">
+            <div className="grid grid-cols-1 md:grid-cols-2 h-[350px] md:h-[200px] lg:h-[300px] mt-5 items-center lg:grid-cols-4 bg-[#241468]">
                 <div className="text-center text-white font-bold ">
                     <h2 className="text-4xl">40</h2>
                     <p className="text-xl">Projects</p>

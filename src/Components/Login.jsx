@@ -34,7 +34,7 @@ const Login = () => {
     }
 
     return (
-        <div className="w-3/4">
+        <div className="w-3/4 p-4">
             <h2 className="text-3xl font-bold my-10 text-[#241468]">Please Login</h2>
 
             <form onSubmit={handleLogIn}>
