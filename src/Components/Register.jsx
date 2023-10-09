@@ -1,18 +1,22 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "./AuthProvider";
+import { updateProfile } from "firebase/auth";
 
 
 const Register = () => {
 
-    const { signInWithGoogle, setName, setPhoto, setUser, name, photo, createUser, setError } = useContext(AuthContext)
+    const { signInWithGoogle, setUser, createUser } = useContext(AuthContext)
+
+    const [success, setSuccess] = useState('');
+    const [error, setError] = useState('');
 
     const handleRegister = e => {
         e.preventDefault();
-        // const name = e.target.name.value;
+        const name = e.target.name.value;
         const email = e.target.email.value;
         const password = e.target.password.value;
-        // const photo = e.target.ingURL.value;
+        const photo = e.target.imgURL.value;
 
 
         if(password.length < 6){
@@ -32,10 +36,23 @@ const Register = () => {
         .then(result =>{
             const loggedInUser = result.user;
             setUser(loggedInUser);
+            setSuccess('Successfully created user')
+
+            updateProfile(loggedInUser, {
+                displayName: name,
+                photoURL: photo
+            })
+            .then(()=>{
+                console.log('profile updated');
+            })
+            .catch((error)=>{
+                console.log(error.message);
+            })
+
             console.log(loggedInUser);
         })
         .catch(error =>{
-            setError(error.message);
+            // setError(error.message);
             console.log(error.message);
         })
     }
@@ -45,11 +62,10 @@ const Register = () => {
         .then(result =>{
             const loggedInUser = result.user;
             setUser(loggedInUser);
-            setName(loggedInUser.displayName);
-
-            setPhoto(loggedInUser.photoURL)
+            setSuccess('Google Signin Successfull!');
+        
             console.log(loggedInUser);
-            console.log(name, photo);
+            
         })
         .catch(error =>{
             console.log(error.message);
@@ -79,6 +95,10 @@ const Register = () => {
                 underline text-blue-700 font-bold" to='/login'>Login</Link> </p>
 
             </form>
+
+            {
+                success ? <p className="text-green-500 font-bold">{success}</p> : <p className="text-red-500 font-bold">{error}</p>
+            }
 
             <p className="text-xl my-3 text-blue-700">Or</p>
 

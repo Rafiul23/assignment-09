@@ -10,9 +10,6 @@ const googleProvider = new GoogleAuthProvider();
 
 const AuthProvider = ({ children }) => {
     const [user, setUser] = useState(null);
-    const [name, setName] = useState(null);
-    const [photo, setPhoto] = useState(null);
-    const [error, setError] = useState(null);
     const [loading, setLoading] = useState(true);
 
     const signInWithGoogle = () =>{
@@ -50,15 +47,9 @@ const AuthProvider = ({ children }) => {
     const authInfo = {
         user,
         loading,
-        name,
-        photo,
-        setPhoto,
-        setName,
         setUser,
         signInWithGoogle,
         createUser,
-        error,
-        setError,
         signIn,
         logOut
     }
