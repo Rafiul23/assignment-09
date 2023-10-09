@@ -2,6 +2,8 @@ import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "./AuthProvider";
 import { updateProfile } from "firebase/auth";
+import {  toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const Register = () => {
@@ -43,17 +45,17 @@ const Register = () => {
                 photoURL: photo
             })
             .then(()=>{
-                console.log('profile updated');
+                toast.success('profile updated');
             })
             .catch((error)=>{
-                console.log(error.message);
+                toast.error(error.message);
             })
 
-            console.log(loggedInUser);
+            
         })
         .catch(error =>{
-            // setError(error.message);
-            console.log(error.message);
+            toast.error(error.message);
+            
         })
     }
 
@@ -62,7 +64,7 @@ const Register = () => {
         .then(result =>{
             const loggedInUser = result.user;
             setUser(loggedInUser);
-            setSuccess('Google Signin Successfull!');
+            setSuccess('Google Signin Successful!');
         
             console.log(loggedInUser);
             
