@@ -87,6 +87,7 @@ const Register = () => {
             <h2 className="text-3xl font-bold my-10 text-[#241468]">Please Register</h2>
 
             <form onSubmit={handleRegister}>
+                
                 <label htmlFor="name">Name</label>
                 <input type="text" name="name" id="name" className="border p-4 block my-4 w-3/4" placeholder="Your Name" required />
 
