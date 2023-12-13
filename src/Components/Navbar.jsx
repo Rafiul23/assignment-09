@@ -1,11 +1,15 @@
 import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "./AuthProvider";
-
+import { motion } from 'framer-motion';
 
 
 
 const Navbar = () => {
+    const containerVariants = {
+        hidden: { opacity: 0 },
+        visible: { opacity: 1, transition: { duration: 1 } },
+    };
 
     const { user, logOut, name, photo } = useContext(AuthContext);
 
@@ -53,7 +57,12 @@ const Navbar = () => {
     </>
 
     return (
-        <div className="navbar p-5 bg-[#241468]">
+       <motion.div
+       variants={containerVariants}
+       initial="hidden"
+       animate="visible"
+       >
+         <div className="navbar p-5 bg-[#241468]">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -92,6 +101,7 @@ const Navbar = () => {
             </div>
 
         </div>
+       </motion.div>
     );
 };
 

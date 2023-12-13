@@ -1,10 +1,20 @@
 import client1 from '../assets/client_1.jpg'
 import client2 from '../assets/client_2.jpg'
 import client3 from '../assets/client_3.jpg'
+import { motion } from 'framer-motion';
 
 const Testimonials = () => {
+    const containerVariants = {
+        hidden: { opacity: 0 },
+        visible: { opacity: 1, transition: { duration: 1 } },
+    };
     return (
-       <div className='my-10 lg:my-20'>
+      <motion.div
+      variants={containerVariants}
+      initial="hidden"
+      animate="visible"
+      >
+         <div className='my-10 lg:my-20'>
         <h2 className='text-center my-4 font-bold text-3xl text-[#241468]'>Testimonials</h2>
              <div className='grid grid-cols-1 md:grid-cols-3  gap-4'>
             <div className='text-center p-3 font-bold text-[#241468] space-y-4'>
@@ -25,6 +35,7 @@ const Testimonials = () => {
             
         </div>
        </div>
+      </motion.div>
     );
 };
 
