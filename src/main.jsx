@@ -17,6 +17,8 @@ import { ToastContainer } from 'react-toastify';
 import PrivateRoute from './PrivateRoute/PrivateRoute';
 import Contact from './Components/Contact';
 import ErrorPage from './Components/ErrorPage';
+import 'tailwindcss/tailwind.css';
+
 
 const router = createBrowserRouter([
   {

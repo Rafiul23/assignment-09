@@ -4,6 +4,7 @@ import { AuthContext } from "./AuthProvider";
 
 
 
+
 const Navbar = () => {
 
     const { user, logOut, name, photo } = useContext(AuthContext);
@@ -70,6 +71,7 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
+           
             {
                 user && <img className="rounded-full w-8 h-8 md:w-10 mr-3 md:h-10" src={user?.photoURL} />
             }
